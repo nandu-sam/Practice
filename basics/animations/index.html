@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: #8ddcdf;
+        width: 250px;
+        height: 250px;
+        position: relative;
+        box-sizing: border-box;
+        display: flex;
+        border: 1px solid red;
+        flex-wrap: wrap;
+        animation-name: movement;
+        animation-duration: 10s; /*The amount of time duration of the animation */
+        animation-delay: 2s; /*The dealay in starting the animaton*/
+        animation-iteration-count: 3;
+        animation-timing-function: linear;
+        animation-fill-mode: backwards;
+      }
+      @keyframes movement {
+        0% {
+          background-color: rgb(204, 37, 37);
+          left: 0px;
+          right: 0px;
+        }
+        25% {
+          background-color: burlywood;
+          left: 200px;
+          top: 0px;
+        }
+        50% {
+          background-color: blueviolet;
+          left: 200px;
+          top: 200px;
+        }
+        75% {
+          background-color: chocolate;
+          left: 0px;
+          top: 200px;
+        }
+        100% {
+          background-color: palevioletred;
+          left: 0px;
+          top: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>THE CSS ANIMATIONS</h1>
+    </div>
+  </body>
+</html>

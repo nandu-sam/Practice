@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  overflow-x: none;
+  background-color: #e2e5e8;
+  background-image: linear-gradient(98deg, #f3d7ee 10%, #f3d5d5 90%);
+  border-radius: 1px;
+  flex-wrap: wrap;
+}
+
+.navContainer {
+  width: 100vw;
+  background-color: #000000;
+  background-image: linear-gradient(160deg, #5fc5eecb 0%, #10176d 100%);
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+}
+nav {
+  width: 100%;
+}
+#navList {
+  width: 100%;
+  padding: 15px;
+  list-style: none;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#navLogo {
+  font-size: 2.8rem;
+  color: azure;
+  font-family: "Dancing Script", cursive;
+  flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
+  color: azure;
+}
+#navItems {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.footerBox {
+  background-color: #000000;
+  background-image: linear-gradient(160deg, #5fc5eecb 0%, #10176d 100%);
+  color: azure;
+  width: 100%;
+  text-align: center;
+  min-height: 30px;
+}
+.footerBox p {
+  font-size: 1rem;
+  font-family: "Dancing Script", cursive;
+}
+.contentBox {
+  width: 50%;
+  margin: auto;
+  /* border: 1px solid black; */
+  background-image: linear-gradient(
+    65deg,
+    rgba(0, 255, 221, 0.74),
+    rgba(230, 137, 188, 0.712),
+    rgba(228, 210, 107, 0.89)
+  );
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding: 3rem;
+  box-shadow: 0px 0px 30px black;
+  border-radius: 5px;
+  flex-wrap: wrap;
+}
+
+.item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.rightBox {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s linear 0s;
+  box-shadow: 1px 1px 10px black;
+  border-radius: 20px;
+}
+
+.rightBox img {
+  height: 350px;
+  border-radius: 20px;
+  transition: all 0.6s linear 0s;
+}
+
+.rightBox:hover {
+  transform: scale(1.1);
+}
+
+.leftBox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.leftBox h2 {
+  font-size: 2rem;
+}
+
+.ingBox {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.recipeBox {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.rightBox .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(36, 34, 34, 0.713);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s linear 0s;
+}
+
+.rightBox:hover .overlay {
+  opacity: 1;
+}
+
+.rightBox .overlay span {
+  color: rgb(247, 230, 230);
+  font-size: 1.2rem;
+}

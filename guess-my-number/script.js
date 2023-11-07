@@ -36,7 +36,7 @@ document.querySelector('.check').addEventListener('click', function () {
 
     //changing the color of bg color and width
 
-    document.querySelector('body').style.backgroundColor = '#53c431';
+    document.querySelector('body').style.backgroundColor = '#299c05';
     document.querySelector('.number').style.width = '30rem';
 
     //setting highscore value

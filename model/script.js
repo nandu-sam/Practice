@@ -6,7 +6,7 @@ const btnOpenModel = document.querySelectorAll(".show-model");
 console.log(btnOpenModel);
 for (let i = 0; i < btnOpenModel.length; i++) {
   btnOpenModel[i].addEventListener("click", function () {
-    console.log("button clicked");
+    console.log("Button clicked");
     modal.classList.remove("hidden");
     overlay.classList.remove("hidden");
   });

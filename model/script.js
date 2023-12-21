@@ -12,15 +12,25 @@ for (let i = 0; i < btnOpenModal.length; i++) {
     //to close the button by using the class
   });
 
-  btnCloseModal.addEventListener("click", function () {
-    /*these two lines are to close the model window after it is clicked using model add */
+  const closeModal = function () {
     modal.classList.add("hidden");
     overlay.classList.add("hidden");
-  });
+  };
+
+  btnCloseModal.addEventListener(
+    "click",
+    closeModal
+    /*these two lines are to close the model window after it is clicked using model add this violates the DRY RULES 
+        modal.classList.add("hidden");
+    overlay.classList.add("hidden"); */
+  );
 
   /*this is used to click anywhere near overlay (or outside the overlay) to close the model window*/
-  overlay.addEventListener("click", function () {
-    modal.classList.add("hidden");
-    overlay.classList.add("hidden");
-  });
+  overlay.addEventListener(
+    "click",
+    closeModal
+
+    /*  modal.classList.add("hidden");
+    overlay.classList.add("hidden");*/
+  );
 }
